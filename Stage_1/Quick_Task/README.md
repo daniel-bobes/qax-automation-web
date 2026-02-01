@@ -55,6 +55,7 @@ public class MiprimerTest {
 6. Realiza una espera 2 segundos.
 7. Se cierra el navegador.
 
+Puedes ver la grabación de la ejecución [aquí](./QuickTask1/grabaciones/Grabación%20de%20la%20ejecución%20del%20test.mp4). 
 ___
 
 # 🚀 Ejercicio 2
