@@ -3,6 +3,12 @@ ___
 - **📁 Carpeta:** `Stage_1/Quick_Task`
 - **🎯 Objetivo:** Configurar el entorno y crear nuestro primer proyecto maven con Selenium Web Driver y Java para la automatización de pruebas Web.
 
+## 🛠️ Tecnologías Utilizadas
+- Lenguaje de  programación: Java ☕
+- Framework de Pruebas: TestNG ✅
+- Automatización Web: Selenium Web Driver 🤖
+- Gestor de Dependencias: Maven 📦
+- Navegador: Google Chrome 🌐
 ___
 # 🚀 Ejercicio 1
 - **📁 Carpeta:** `Stage_1/Quick_Task/QuickTask1`
@@ -64,10 +70,9 @@ ___
 
 ## 📝 Instrucciones
 1. Ingresar a la página de [Amazon](https://www.amazon.com/).
-2. Identificar **10 elementos diferentes** en la página (botones, campos, enlaces, menús, etc).
-   - Por cada elemento, **definir al menos 3 localizadores distintos**.
-     - Por atributo (`id`, `name`, `data-*`)
-     - Por CSS Selector
-     - Por XPath
-   - Elegir cual es el localizador más estable y explicar brevemente por qué.
-3. Documentar todos los resultados en un archivo llamado `amazon-selectors.md`
+2. Identificar **10 elementos diferentes** en la página.
+3. Por cada elemento, definir al menos 3 localizadores distintos y elegir cuál es el más estable.
+4. Documentar los resultados en el archivo correspondiente.
+
+## 📄 Entregable
+Se pueden encontrar los selectores seleccionados para este ejercicio en el archivo detallado: [amazon-selectors.md](./QuickTask2/amazon-selectors.md)
