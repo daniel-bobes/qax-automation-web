@@ -58,6 +58,16 @@ public class MiprimerTest {
 Puedes ver la grabación de la ejecución [aquí](./QuickTask1/grabaciones/Grabación%20de%20la%20ejecución%20del%20test.mp4). 
 ___
 
-# 🚀 Ejercicio 2
+# 🔍 Ejercicio 2
 - **📁 Carpeta:** `Stage_1/Quick_Task/QuickTask2`
-- **🎯 Objetivo:** TODO
+- **🎯 Objetivo:** Practicar la identificación y localización de elementos web utilizando diferentes estrategias de localización (ID, name, CSS Selectors, XPath, etc) y determinar cuál es el localizador más estable.
+
+## 📝 Instrucciones
+1. Ingresar a la página de [Amazon](https://www.amazon.com/).
+2. Identificar **10 elementos diferentes** en la página (botones, campos, enlaces, menús, etc).
+   - Por cada elemento, **definir al menos 3 localizadores distintos**.
+     - Por atributo (`id`, `name`, `data-*`)
+     - Por CSS Selector
+     - Por XPath
+   - Elegir cual es el localizador más estable y explicar brevemente por qué.
+3. Documentar todos los resultados en un archivo llamado `amazon-selectors.md`
