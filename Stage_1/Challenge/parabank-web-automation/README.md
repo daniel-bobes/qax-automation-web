@@ -50,6 +50,6 @@ mvn test -Dtest=ParabankTest
 ```
 
 ## 📊 Reportes
-Trás la ejecución, se generan reportes detallados en la ruta `target/reports`.
+Trás la ejecución, se generan reportes detallados en la ruta `target/surefire-reports`.
 
-Para visualizar el reporte solo tienes que abrir el reporte `surefire.html` en tu navegador favorito 🌐.
+Para visualizar el reporte solo tienes que abrir el reporte `emailable-report.html` en tu navegador favorito 🌐.
