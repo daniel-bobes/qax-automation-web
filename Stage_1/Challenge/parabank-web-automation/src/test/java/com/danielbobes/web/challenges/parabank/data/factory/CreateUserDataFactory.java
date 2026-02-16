@@ -1,7 +1,7 @@
-package com.danielbobes.data.factory;
+package com.danielbobes.web.challenges.parabank.data.factory;
 
-import com.danielbobes.models.CreateUserBuilder;
-import com.danielbobes.models.User;
+import com.danielbobes.web.challenges.parabank.models.CreateUserBuilder;
+import com.danielbobes.web.challenges.parabank.models.User;
 import com.github.javafaker.Faker;
 
 import java.util.Locale;

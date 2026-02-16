@@ -1,4 +1,4 @@
-package com.danielbobes.models;
+package com.danielbobes.web.challenges.parabank.models;
 
 public final class CreateUserBuilder {
 

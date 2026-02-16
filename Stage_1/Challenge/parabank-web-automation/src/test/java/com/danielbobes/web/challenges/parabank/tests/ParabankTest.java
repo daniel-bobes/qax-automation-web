@@ -1,8 +1,8 @@
-package com.danielbobes.tests;
+package com.danielbobes.web.challenges.parabank.tests;
 
-import com.danielbobes.config.Config;
-import com.danielbobes.models.User;
-import com.danielbobes.data.factory.CreateUserDataFactory;
+import com.danielbobes.web.challenges.parabank.config.Config;
+import com.danielbobes.web.challenges.parabank.models.User;
+import com.danielbobes.web.challenges.parabank.data.factory.CreateUserDataFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -83,7 +83,7 @@ public class ParabankTest {
 
         WebElement socialSecurityNumber = driver.findElement(By.id("customer.ssn"));
         socialSecurityNumber.clear();
-        socialSecurityNumber.sendKeys("666333666");
+        socialSecurityNumber.sendKeys(user.getSocialSecurityNumber());
 
         WebElement usernameInput = driver.findElement(By.id("customer.username"));
         usernameInput.clear();

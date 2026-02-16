@@ -1,4 +1,4 @@
-package com.danielbobes.config;
+package com.danielbobes.web.challenges.parabank.config;
 
 public final class Config {
 
