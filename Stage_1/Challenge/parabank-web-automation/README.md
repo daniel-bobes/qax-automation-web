@@ -5,7 +5,6 @@ Framework de automatización de pruebas web para la web de **[Parabank](https://
 ## 🛠️ Tecnologías Usadas
 * **Java 21+** ☕: lenguaje de programación principal utilizado para el desarrollo del framework de automatización.
 * **TestNG** ✅: Motor de ejecución de pruebas.
-* **Selenium Web Driver:** <poner texto>
 * **Selenium WebDriver** 🌐: Herramienta esencial para la automatización de navegadores que permite simular interacciones humanas con la interfaz web.
 * **JavaFaker** 🎲: Librería utilizada para la generación de datos aleatorios y realistas (nombres, direcciones, etc.), garantizando que cada registro sea único.
 * **Aspectos de Diseño (Pattern Builder)** 🏗️: Implementación del patrón de diseño Builder para una creación de objetos de prueba (User) más legible y flexible.
