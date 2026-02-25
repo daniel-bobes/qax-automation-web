@@ -1,6 +1,5 @@
 # Misión: Automatización Web con Selenium.
 * 📁 Carpeta: Stage_1/Mission/selenium-web-automation
-* 🎯 Objetivo: definir un objetivo colega
 
 ---
 # Introducción
