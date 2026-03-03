@@ -8,8 +8,8 @@ Este directorio contiene la resolución de la tarea de automatización Web, divi
 
 📂 Contenido
 * Localizadores necesarios para completar un flujo de compra end-to-end en la página [TestingYes OnlineShop](http://www.testingyes.com/onlineshop/).
-  * Ver el archivo [locators-compra.md](locators-compra.md)
+  * Ver el archivo [locators-compra.md](locators/locators-compra.md)
 * Localizadores necesarios para interactuar con elementos dentro de un Shadow DOM, IFrame y Pop Up.
-  * Ver el archivo: [shadow-iframe-popup.md](shadow-iframe-popup.md)
+  * Ver el archivo: [shadow-iframe-popup.md](locators/shadow-iframe-popup.md)
 * Proyecto Maven con la implementación técnica de las acciones avanzadas.
   * Ver el directorio [advanced-actions-web-automation](./advanced-actions-web-automation)
