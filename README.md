@@ -1,4 +1,4 @@
-# Portafolio de Automatización de APIs con Rest Assured y Java - Daniel Bobes
+# Portafolio de Automatización de Pruebas Web con Selenium WebDriver y Java - Daniel Bobes
 
 ¡Hola! Soy **Daniel**, Analista QA enfocado en construir soluciones de automatización robustas y escalables para APIs.
 
@@ -8,7 +8,7 @@ Mi objetivo es demostrar mis habilidades para crear, ejecutar y mantener tests r
 ___
 ### 🚀 Tecnologías que utilizo 
 - **Lenguaje:** Java 11+ ☕
-- **Frameworks de Automatización:** Selenium Web Driver, Cucumber (BDD) 🥒
+- **Frameworks/Liberías de Automatización:** Selenium WebDriver, Cucumber (BDD) 🥒
 - **Gestión:** Maven, JUnit, TestNG 🏗️
 - **Otras herramientas:** Git, Postman 🚀
 ___
