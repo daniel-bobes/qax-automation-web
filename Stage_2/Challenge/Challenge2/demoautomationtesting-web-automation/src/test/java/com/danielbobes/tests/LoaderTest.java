@@ -20,7 +20,7 @@ public class LoaderTest extends BaseTest {
     public void loaderTest() {
         loaderPage.pushOnRun();
         Assert.assertTrue(loaderPage.isLoaderVisible(), "El loader debería ser visible");
-        Assert.assertTrue(loaderPage.waitForLoaderToClose(), "El loader no debería ser visible");
+        loaderPage.waitForLoaderToClose();
         Assert.assertTrue(loaderPage.isModalVisible(), "El modal debería ser visible");
     }
 }

@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class DragAndDropPage extends BaseDemoQAPage {
+public class DragAndDropPage extends BasePage {
 
     private final By angularImage = By.cssSelector("#dragarea #angular");
     private final By mongoImage = By.cssSelector("#dragarea #mongo");
@@ -20,8 +20,8 @@ public class DragAndDropPage extends BaseDemoQAPage {
     }
 
     public void dragAndDrop() {
-        //consentCookies();
-        //makeAdsDisappear();
+        consentCookies();
+        makeAdsDisappear();
 
         List<By> images = Arrays.asList(angularImage, mongoImage, nodeImage);
         Collections.shuffle(images);
