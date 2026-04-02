@@ -1,6 +1,6 @@
 # Portafolio de Automatización de Pruebas Web con Selenium WebDriver y Java - Daniel Bobes
 
-¡Hola! Soy **Daniel**, Analista QA enfocado en construir soluciones de automatización robustas y escalables para APIs.
+¡Hola! Soy **Daniel**, Analista QA enfocado en construir soluciones de automatización robustas y escalables para pruebas web.
 
 Este repositorio es el núcleo de mi formación en la mentoría **QA Pro Level de QAX**.
 
