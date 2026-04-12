@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.bobes.daniel</groupId>
-  <artifactId>Stage01_Quickstart</artifactId>
+  <groupId>com.danielbobes</groupId>
+  <artifactId>stage01_quickstart</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Stage01_Quickstart</name>
+  <name>Stage 1 Quickstart</name>
   <url>https://github.com/daniel-bobes/qax-automation-web</url>
 
   <properties>
@@ -27,7 +27,7 @@
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- Testng 7 -->
+    <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>

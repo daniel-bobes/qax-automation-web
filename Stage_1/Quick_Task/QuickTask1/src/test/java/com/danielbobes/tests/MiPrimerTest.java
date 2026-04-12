@@ -1,4 +1,4 @@
-package com.bobes.daniel;
+package com.danielbobes.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
