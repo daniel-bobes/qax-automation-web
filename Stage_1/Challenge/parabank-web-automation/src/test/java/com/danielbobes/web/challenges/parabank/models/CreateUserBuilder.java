@@ -13,7 +13,7 @@ public final class CreateUserBuilder {
     }
 
     public CreateUserBuilder withPersonalInfo(String firstName, String lastName, String phone) {
-        user.setFistName(firstName);
+        user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setPhone(phone);
         return this;

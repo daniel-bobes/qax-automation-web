@@ -32,7 +32,7 @@ public class ParabankTest {
         driver.manage().window().maximize();
     }
 
-    @Test(description = "Challenge 01 - Mi primera automatización")
+    @Test(testName = "Challenge 01 - Mi primera automatización")
     public void miPrimeraAutomatizacion() {
         String expectedTitle = "Signing up is easy!";
 
@@ -53,9 +53,9 @@ public class ParabankTest {
 
         // 4. Ingresar los datos solicitados en el formulario
         User user = CreateUserDataFactory.withAllInformation();
-        WebElement fistName = driver.findElement(By.id("customer.firstName"));
-        fistName.click();
-        fistName.sendKeys(user.getFistName());
+        WebElement firstName = driver.findElement(By.id("customer.firstName"));
+        firstName.click();
+        firstName.sendKeys(user.getFirstName());
 
         WebElement lastName = driver.findElement(By.id("customer.lastName"));
         lastName.clear();
