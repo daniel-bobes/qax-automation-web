@@ -1,19 +1,16 @@
 package com.danielbobes.web.tests.bonigarcia;
 
 import com.danielbobes.web.config.Config;
+import com.danielbobes.web.pages.bonigarcia.RandomCalculatorPage;
 import com.danielbobes.web.tests.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-
 import java.util.Random;
 
 public class RandomCalculatorTest extends BaseTest {
-
-    private static final String COMMON_LOCATOR = "//div[@class='keys']/span[text()='%s']";
 
     @DataProvider(name = "calculator")
     private Object[][] getTestData() {
@@ -31,18 +28,15 @@ public class RandomCalculatorTest extends BaseTest {
     public void test(int firstOperand, int secondOperand, String operator) {
         driver.get(Config.URL_BONI_GARCIA_RANDOM_CALCULATOR);
 
-        WebElement percentInput = driver.findElement(By.id("percent"));
-        percentInput.clear();
-        percentInput.sendKeys("0");
+        RandomCalculatorPage randomCalculatorPage = new RandomCalculatorPage(driver);
 
-        WebElement correctInput = driver.findElement(By.id("correct"));
-        correctInput.clear();
-        correctInput.sendKeys("0");
+        randomCalculatorPage.typePercent("0");
+        randomCalculatorPage.typeCorrect("0");
 
-        clickCalculatorButton(String.valueOf(firstOperand));
-        clickCalculatorButton(operator);
-        clickCalculatorButton(String.valueOf(secondOperand));
-        clickCalculatorButton("=");
+        randomCalculatorPage.pushOnButton(String.valueOf(firstOperand));
+        randomCalculatorPage.pushOnButton(operator);
+        randomCalculatorPage.pushOnButton(String.valueOf(secondOperand));
+        randomCalculatorPage.pushOnButton("=");
 
         WebElement result = driver.findElement(By.className("screen"));
         System.out.println("Resultado de la operación '"
@@ -50,10 +44,6 @@ public class RandomCalculatorTest extends BaseTest {
                 + operator + " "
                 + secondOperand + "' = "
                 + result.getText());
-    }
-
-    private void clickCalculatorButton(String button) {
-        wait.until(elementToBeClickable(By.xpath(String.format(COMMON_LOCATOR, button)))).click();
     }
 
 }

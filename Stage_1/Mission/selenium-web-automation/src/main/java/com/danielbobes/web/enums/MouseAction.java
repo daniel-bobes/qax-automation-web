@@ -1,6 +1,6 @@
-package com.danielbobes.web.config.enums;
+package com.danielbobes.web.enums;
 
-public enum MouseClick {
+public enum MouseAction {
 
     LEFT_CLICK("Clic izquierdo"),
     RIGHT_CLICK("Clic derecho"),
@@ -8,7 +8,7 @@ public enum MouseClick {
 
     private final String spanishDescription;
 
-    MouseClick(String spanishDescription) {
+    MouseAction(String spanishDescription) {
         this.spanishDescription = spanishDescription;
     }
 

@@ -40,7 +40,7 @@
 
   <build>
     <plugins>
-      <!-- Compilar con Java 11 -->
+      <!-- Compilar con Java 21 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

@@ -36,7 +36,7 @@ public abstract class BaseTest {
     }
 
     @BeforeMethod
-    public void setUp() {
+    public void setUpDriver() {
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(Config.DEFAULT_TIMEOUT));
         driver.manage().window().setSize(new Dimension(1920,1080));

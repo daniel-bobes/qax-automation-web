@@ -11,7 +11,7 @@ public final class Utils {
 
     }
 
-    public static String getTomorrowsDate()  {
+    public static String getTomorrowsDateAsString()  {
        return LocalDate.now()
                .plusDays(1)
                .format(DateTimeFormatter.ofPattern(SPANISH_DATE_PATTERN));

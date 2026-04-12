@@ -1,57 +1,49 @@
 package com.danielbobes.web.tests.katalondemocura;
 
 import com.danielbobes.web.config.Config;
+import com.danielbobes.web.pages.katalondemocura.HomePage;
+import com.danielbobes.web.pages.katalondemocura.LoginPage;
+import com.danielbobes.web.pages.katalondemocura.MakeAppointmentPage;
 import com.danielbobes.web.tests.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+import org.testng.AssertJUnit;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class LoginDemoCuraTest extends BaseTest {
 
+    private HomePage homePage;
+    private LoginPage loginPage;
+
+    @BeforeMethod
+    public void setUp() {
+        homePage = new HomePage(driver);
+        loginPage = new LoginPage(driver);
+        driver.get(Config.URL_KATALON_DEMO_CURA);
+    }
+
     @Test(testName = "Login Failed Test")
     public void loginFailedTest() {
+        String username = "QAX", password = "ThisIsNotAPassword";
         String expectedMessage = "Login failed! Please ensure the username and password are valid.";
-        driver.get(Config.URL_KATALON_DEMO_CURA);
 
-        goToMakeAppointMent();
-        login("QAX", "ThisIsNotAPassword");
+        homePage.goToMakeAppointment();
+        loginPage.login(username,password);
 
-        WebElement message = wait.until(visibilityOfElementLocated(By.cssSelector("p.text-danger")));
-        AssertJUnit.assertEquals(expectedMessage, message.getText());
+        AssertJUnit.assertEquals(expectedMessage, loginPage.getMessageText());
     }
 
     @Test(testName = "Login Test")
     public void loginTest() {
+        String username = "John Doe", password = "ThisIsNotAPassword";
         String expectedMessage = "Make Appointment";
-        driver.get(Config.URL_KATALON_DEMO_CURA);
 
-        goToMakeAppointMent();
-        login("John Doe", "ThisIsNotAPassword");
+        homePage.goToMakeAppointment();
+        loginPage.login(username,password);
 
-        WebElement headerMakeAppointment = wait.until(visibilityOfElementLocated(By.tagName("h2")));
-        String headerText = headerMakeAppointment.getText();
-        AssertJUnit.assertEquals(expectedMessage, headerText);
+        MakeAppointmentPage makeAppointmentPage = new MakeAppointmentPage(driver);
+        AssertJUnit.assertEquals(expectedMessage, makeAppointmentPage.getHeaderText());
         System.out.println("Inicio de sesión exitoso");
     }
 
-    private void goToMakeAppointMent() {
-        wait.until(elementToBeClickable(By.id("btn-make-appointment"))).click();
-        wait.until(visibilityOfElementLocated(By.xpath("//h2[text()='Login']")));
-    }
-
-    private void login(String username, String password) {
-        WebElement usernameInput = driver.findElement(By.id("txt-username"));
-        WebElement passwordInput = driver.findElement(By.id("txt-password"));
-
-        usernameInput.clear();
-        usernameInput.sendKeys(username);
-
-        passwordInput.clear();
-        passwordInput.sendKeys(password);
-
-        driver.findElement(By.id("btn-login")).click();
-    }
 }
